@@ -1,173 +1,123 @@
-# Inboxie  
+<div align="center">
+  
+# 📬 Inboxie
+
 **An Action-Intelligent Email Client for Reducing Missed Follow-ups and Deadlines**
 
----
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## Abstract
+*Inboxie surfaces the emails that actually matter based on inferred intent, urgency, and required action—keeping your inbox clean and your mind clear.*
 
-Inboxie is a multi-provider email client that augments traditional email interfaces with an action-intelligence layer designed to reduce missed follow-ups, overlooked requests, and unmanaged deadlines. Rather than prioritizing chronological ordering, the system surfaces emails based on inferred intent, urgency, and required user action. The application emphasizes explainability, user control, and privacy-aware processing, enabling users to understand *why* an email is flagged and how prioritization decisions are made.
-
----
-
-## Project Objectives
-
-The primary objectives of Inboxie are as follows:
-
-- To identify emails that require user action using rule-based and AI-assisted intent detection  
-- To prevent missed replies, follow-ups, and time-sensitive tasks  
-- To present prioritization decisions in an explainable and transparent manner  
-- To organize emails by human-readable intent (e.g., needs reply, waiting on others)  
-- To provide customizable labels and buckets adaptable to individual user workflows  
-- To maintain strong privacy guarantees through configurable data storage modes  
+</div>
 
 ---
 
-## Scope and MVP Focus
+## 🎯 Abstract & Objectives
 
-The Minimum Viable Product (MVP) focuses on the following scope:
+Traditional email clients sort by time; Inboxie sorts by **action**. 
 
-- Gmail integration as the initial email provider  
-- Identification and surfacing of emails that require action  
-- A dedicated “Needs Action” view distinct from a traditional inbox  
-- Rule-based intelligence with limited AI augmentation  
-- Explainable recommendations through transparent triggers  
-- User-configurable priority sensitivity and basic label customization  
+Inboxie is a modern, cross-platform email client that augments your inbox with a privacy-aware intelligence layer. Instead of a chronological list of noise, Inboxie instantly identifies emails that require your attention to prevent missed replies, overlooked requests, and dropped deadlines.
 
-Support for additional email providers, advanced machine learning pipelines, and full rule-mapping interfaces are explicitly out of scope for the MVP phase.
+- **Action-First Design**: Identify emails that require user action using rule-based and AI-assisted intent detection.
+- **Explainable AI**: Understand exactly *why* an email was prioritized with high transparency.
+- **Customizable Workflows**: Organize emails by human-readable intents (e.g., Needs Reply, Waiting on Others).
+- **Privacy-Aware**: Configurable data storage modes ensure your personal data stays on the device.
 
 ---
 
-## Core Features (MVP)
+## ✨ Core Features
 
-### 1. Action-Centric Inbox
-- Dedicated “Needs Action” panel displaying a limited set of high-priority emails  
-- Priority inbox with summary lines and action labels  
-- Quick actions: reply, snooze, mark as done, mute sender  
+### ⚡️ Action-Centric Inbox
+A dedicated **"Needs Action"** panel acts as your daily command center. It filters out newsletters and casual chatter, displaying only high-priority emails with smart summary lines. Quickly execute actions: Reply, Snooze, Mark as Done, or Mute Sender.
 
-### 2. Explainability and Trust
-- “Why recommended?” explanations for every flagged email  
-- Human-readable triggers such as:
-  - Direct questions
-  - Unanswered threads
-  - Deadlines or time-sensitive language
-  - Waiting-for-response conditions  
-- Confidence indicators for inferred actions  
+### 🧠 Explainable Intelligence
+No black boxes. Every flagged email includes a **"Why recommended?"** chip that explains the AI's reasoning. Triggers include:
+- Direct questions aimed at you
+- Unanswered threads
+- Time-sensitive language or hard deadlines
 
-### 3. Intent-Based Buckets
-Default buckets include:
-- Needs Reply  
-- Waiting on Others  
-- Calendar-worthy  
-- Bills & Receipts  
-- Low Value / Newsletters  
+### 🗂️ Intent-Based Buckets
+Inboxie auto-sorts your mail into meaningful buckets:
+- 🔴 **Needs Reply**
+- ⏳ **Waiting on Others**
+- 📅 **Calendar-worthy**
+- 🧾 **Bills & Receipts**
+- 📉 **Low Value / Newsletters**
 
-### 4. Privacy Controls
-Users may select one of the following data-handling modes:
-- Process-only (no storage)  
-- Metadata and summaries only (recommended)  
-- Full email text storage (optional)  
+### 🛡️ Privacy Controls
+You control how your data is handled. Choose from:
+- **Process-only**: No local storage.
+- **Metadata and Summaries**: (Recommended) Fast caching without storing the body.
+- **Full Storage**: Complete email text cached for offline use.
 
 ---
 
-## System Architecture
+## 🛠️ System Architecture
 
-### Frontend
-- Flutter (cross-platform mobile framework)
-- Material Design 3
-- Reactive state management
+Inboxie is built with modern, scalable technologies:
 
-### Backend
-- Firebase Authentication (Google Sign-In)
-- Cloud Firestore (email metadata, user settings)
-- Cloud Functions (email processing and intelligence logic)
-- Firebase Scheduler (follow-up reminders and periodic checks)
-
-### Email Integration
-- Gmail API (read-only access for MVP)
-- Incremental synchronization of recent messages
-
-### Intelligence Layer
-- Rule-based intent detection (primary)
-- Optional LLM-based summarization and draft assistance
-- Structured outputs with explainable signals
+- **Frontend**: Flutter (Material Design 3, Reactive State Management)
+- **Backend**: Firebase Authentication (Google Sign-In), Cloud Firestore, Cloud Functions
+- **Integrations**: Gmail API (Read-only MVP)
+- **Intelligence Layer**: Rule-based intent detection coupled with Groq (LLaMa 3) for ultra-fast summarization and draft assistance.
 
 ---
 
-## Data Model Overview
+## 🚀 Getting Started
 
-High-level Firestore structure:
-
-```
-
-users/
-└── {userId}/
-├── profile/
-├── settings/
-├── emails/
-└── threads/
-
-```
-
-Only metadata and derived intelligence outputs are stored by default. Full email content is stored only when explicitly enabled by the user.
-
----
-
-## Project Setup (Development)
+Want to run Inboxie locally? Follow these steps:
 
 ### Prerequisites
-- Flutter (stable channel)
-- Android Studio
-- Firebase CLI
-- Node.js (for Cloud Functions)
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (Stable)
+- Android Studio / Xcode
+- A [Firebase Project](https://console.firebase.google.com/)
+- A [Groq API Key](https://console.groq.com/) for AI features
 
-### Initial Setup
-1. Clone the repository  
-2. Configure Firebase for the project  
-3. Add platform-specific Firebase configuration files (not committed to version control)  
-4. Enable Google Sign-In and Gmail API access  
-5. Run the application locally using Flutter tooling  
+### Installation
 
----
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/inboxie-portfolio.git
+   cd inboxie-portfolio/app
+   ```
 
-## Collaboration and Version Control
+2. **Install Dependencies**
+   ```bash
+   flutter pub get
+   ```
 
-The project follows a structured Git workflow:
+3. **Configure Environment Variables**
+   Currently, AI features require a Groq API key. You can supply this at runtime in the app's Settings page, or configure it via standard Flutter `.env` practices.
 
-- `main` — stable, demo-ready branch  
-- `dev` — integration branch  
-- `feature/*` — task-specific development branches  
+4. **Connect Firebase**
+   - Register the app in your Firebase project.
+   - Download the `google-services.json` (Android) and `GoogleService-Info.plist` (iOS) and place them in their respective native folders.
 
-All changes are introduced via pull requests with mandatory review. Direct commits to the main branch are restricted.
-
----
-
-## Ethical and Privacy Considerations
-
-Inboxie is designed with the following principles:
-
-- No automated replies are sent without explicit user action  
-- All prioritization decisions are explainable to the user  
-- Data storage is minimized and configurable  
-- Email content is never shared with third parties without consent  
-
-These principles are enforced at both the architectural and interface levels.
+5. **Run the App**
+   ```bash
+   flutter run
+   ```
 
 ---
 
-## Development Timeline
+## 🤝 Contributing
 
-The MVP is developed over a structured seven-week timeline:
-
-- Week 1: Project setup, authentication, Gmail integration  
-- Week 2: Core UI and inbox rendering  
-- Week 3: Action and intent detection logic  
-- Week 4: User actions and thread state management  
-- Week 5: Buckets and low-value filtering  
-- Week 6: Explainability and AI-assisted features  
-- Week 7: UX refinement, testing, and demonstration  
+Contributions, issues, and feature requests are welcome! 
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## Status
+## 📜 License
 
-The project is under active development. Features and architecture are subject to change as the MVP evolves.
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+<div align="center">
+  <i>Built with ❤️ using Flutter and Firebase</i>
+</div>
