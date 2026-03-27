@@ -29,7 +29,6 @@ Inboxie is a modern, cross-platform email client that augments your inbox with a
 
 ## Screenshots
 
-<!-- TODO: Add your UI screenshots below. To do so, drop the image files into a folder named /assets in the root of your repo, and update the paths below.-->
 
 <p align="center">
   <img src="https://via.placeholder.com/250x500.png?text=Main+Inbox" alt="Main Inbox Screenshot" width="200" />
@@ -127,6 +126,3 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
