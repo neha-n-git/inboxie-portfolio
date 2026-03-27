@@ -31,11 +31,13 @@ Inboxie is a modern, cross-platform email client that augments your inbox with a
 
 
 <p align="center">
-  <img src="https://via.placeholder.com/250x500.png?text=Main+Inbox" alt="Main Inbox Screenshot" width="200" />
+  <img src="https://github.com/neha-n-git/inboxie-portfolio/blob/main/screenshots/splash.png?raw=true" alt="Splash Screen" width="200" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://via.placeholder.com/250x500.png?text=AI+Insights" alt="AI Insights Screenshot" width="200" />
+  <img src="https://github.com/neha-n-git/inboxie-portfolio/blob/main/screenshots/home.png?raw=true" alt="Main Inbox Screenshot" width="200" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://via.placeholder.com/250x500.png?text=Settings" alt="Settings Screenshot" width="200" />
+  <img src="https://github.com/neha-n-git/inboxie-portfolio/blob/main/screenshots/ai_features.png?raw=true" alt="AI Insights Screenshot" width="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/neha-n-git/inboxie-portfolio/blob/main/screenshots/profile&settings.png?raw=true" alt="Settings Screenshot" width="200" />
 </p>
 
 ---
