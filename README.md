@@ -1,6 +1,6 @@
 <div align="center">
   
-# 📬 Inboxie
+# Inboxie
 
 **An Action-Intelligent Email Client for Reducing Missed Follow-ups and Deadlines**
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 Abstract & Objectives
+## Abstract & Objectives
 
 Traditional email clients sort by time; Inboxie sorts by **action**. 
 
@@ -27,26 +27,40 @@ Inboxie is a modern, cross-platform email client that augments your inbox with a
 
 ---
 
-## ✨ Core Features
+## Screenshots
 
-### ⚡️ Action-Centric Inbox
+<!-- TODO: Add your UI screenshots below. To do so, drop the image files into a folder named /assets in the root of your repo, and update the paths below.-->
+
+<p align="center">
+  <img src="https://via.placeholder.com/250x500.png?text=Main+Inbox" alt="Main Inbox Screenshot" width="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://via.placeholder.com/250x500.png?text=AI+Insights" alt="AI Insights Screenshot" width="200" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://via.placeholder.com/250x500.png?text=Settings" alt="Settings Screenshot" width="200" />
+</p>
+
+---
+
+## Core Features
+
+### Action-Centric Inbox
 A dedicated **"Needs Action"** panel acts as your daily command center. It filters out newsletters and casual chatter, displaying only high-priority emails with smart summary lines. Quickly execute actions: Reply, Snooze, Mark as Done, or Mute Sender.
 
-### 🧠 Explainable Intelligence
+### Explainable Intelligence
 No black boxes. Every flagged email includes a **"Why recommended?"** chip that explains the AI's reasoning. Triggers include:
 - Direct questions aimed at you
 - Unanswered threads
 - Time-sensitive language or hard deadlines
 
-### 🗂️ Intent-Based Buckets
+### Intent-Based Buckets
 Inboxie auto-sorts your mail into meaningful buckets:
-- 🔴 **Needs Reply**
-- ⏳ **Waiting on Others**
-- 📅 **Calendar-worthy**
-- 🧾 **Bills & Receipts**
-- 📉 **Low Value / Newsletters**
+- Needs Reply
+- Waiting on Others
+- Calendar-worthy
+- Bills & Receipts
+- Low Value / Newsletters
 
-### 🛡️ Privacy Controls
+### Privacy Controls
 You control how your data is handled. Choose from:
 - **Process-only**: No local storage.
 - **Metadata and Summaries**: (Recommended) Fast caching without storing the body.
@@ -54,7 +68,7 @@ You control how your data is handled. Choose from:
 
 ---
 
-## 🛠️ System Architecture
+## System Architecture
 
 Inboxie is built with modern, scalable technologies:
 
@@ -65,7 +79,7 @@ Inboxie is built with modern, scalable technologies:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Want to run Inboxie locally? Follow these steps:
 
@@ -102,7 +116,7 @@ Want to run Inboxie locally? Follow these steps:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! 
 1. Fork the Project
@@ -113,11 +127,6 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
----
-<div align="center">
-  <i>Built with ❤️ using Flutter and Firebase</i>
-</div>
